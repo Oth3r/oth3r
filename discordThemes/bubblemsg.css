@@ -22,3 +22,63 @@
     border-radius           :               5px !important;
     transition              :               0.5s ease;
 }
+
+/* adding glow effect on some stuff and some other details */
+.cozyMessage-1DWF9U.message-2CShn3 .markup-eYLPri:hover{
+    box-shadow              :               0 0 0 2px hsla(0, 0%, 21%, 0.69), 0 3px 16px hsla(0, 0%, 38%, 0.69);
+    transition              :               0.5s ease;
+}
+.cozyMessage-1DWF9U.message-2CShn3  .container-2sjPya .messageAttachment-CZp8Iv a:hover, .imageWrapper-oMkQl4:hover{
+    box-shadow              :               0 0 0 2px hsla(0, 0%, 15%, 0.69), 0 3px 16px hsla(0, 0%, 25%, 0.69);
+    transition              :               0.5s ease;
+    border-radius           :               10px;
+}
+.menu-1QACrS {
+    animation               :               box-shadow infinite 4s, custom-menu-animation 250ms ease;
+    transform-origin        :               top;
+    border-radius           :               12px;
+}
+.menu-1QACrS{
+    border-radius           :               10px;
+}
+.menu-1QACrS .item-1OdjEX:not(.focused-3qFvc8) {
+    border-radius           :               25px;
+}
+.menu-1QACrS .item-1OdjEX:hover {
+    border-radius           :               10px;
+    background-color        :             rgb(58, 58, 58);
+}
+.focused-3qFvc8{
+    border-radius           :               10px;
+    background-color        :             rgb(58, 58, 58) !important;
+}
+.scroller-1bVxF5 .customItem-2CxBSo .button-1zW0-r{
+    transition              :               0.5s ease;
+}
+.contentWrapper-3vHNP2{
+    animation               :               box-shadow infinite 4s;
+    border-radius: 20px;
+}
+@keyframes box-shadow{
+    0%{
+        box-shadow          :               0 0 0 2px hsla(0, 0%, 17%, 0.69), 0 3px 16px hsla(0, 0%, 15%, 0.69);
+        transition          :               0.5s ease;
+    }
+    50%{
+        box-shadow          :               0 0 0 2px hsla(0, 0%, 17%, 0.69), 0 3px 16px hsla(0, 0%, 31%, 0.69);
+        transition          :               0.5s ease;
+    }
+    100%{
+        box-shadow          :               0 0 0 2px hsla(0, 0%, 17%, 0.69), 0 3px 16px hsla(0, 0%, 15%, 0.69);
+        transition          :               0.5s ease;
+    }
+}
+.message-2CShn3 .markup-eYLPri,.message-2CShn3  .container-2sjPya .messageAttachment-CZp8Iv, .imageWrapper-oMkQl4 {
+    transition              :               0.5s ease;
+}
+.markup-eYLPri code{
+    border-radius           :               20px;
+}
+.scrollerSpacer-3AqkT9{
+    height                  :               10px !important;
+}
