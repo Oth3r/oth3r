@@ -219,11 +219,17 @@
 .scrollableContainer-15eg7h:not(.addFriendInputWrapper-kkoSV9 .inputWrapper-1YNMmM .inputDefault-3FGxgL):hover, .input-3r5zZY:hover, .input-2g-os5  {
     border-color            :             #5a5a5a !important;
     background-color        :             #3b3e45 !important;
+    box-shadow              :
+    0 0px 8px hsla(0, 0%, 42%, 0.38),
+    inset 0 0 5px 2px hsla(0, 0%, 42%, 0.38);
 }
 .input-2g-os5:not(.addFriendInputWrapper-kkoSV9 .inputWrapper-1YNMmM .inputDefault-3FGxgL):focus-within,
 .scrollableContainer-15eg7h:not(.addFriendInputWrapper-kkoSV9 .inputWrapper-1YNMmM .inputDefault-3FGxgL):focus-within, .input-3r5zZY:focus-within, .input-2g-os5  {
     border-color            :             #5a5a5a !important;
     background-color        :             #2f3237 !important;
+    box-shadow              :
+    0 0px 10px hsla(0, 0%, 42%, 0.38),
+    inset 0 0 10px 2px hsla(0, 0%, 42%, 0.38);
 }
 .scrollableContainer-15eg7h:not(.addFriendInputWrapper-kkoSV9 .inputWrapper-1YNMmM .inputDefault-3FGxgL) {
     border                  :               1px solid transparent;
@@ -494,5 +500,24 @@
     background-color: #2f3136;
     border: 2px solid var(--background-accent);
     border-radius: 10px;
+}
+
+/* glow on hovered messages */
+.cozyMessage-1DWF9U.message-2CShn3 .markup-eYLPri:hover{
+    background-color        :             rgba(44, 44, 44, 0.5);
+    box-shadow              :
+    0 0px 16px hsla(0, 0%, 56%, 0.7),
+    inset 0 0 10px 2px hsla(0, 0%, 45%, 0.5);
+    transition              :               0.5s ease;
+}
+/* making text glow hitbox */
+.cozyMessage-1DWF9U .contents-2MsGLg>.markup-eYLPri:not(:empty) {
+    background-color        :               transparent;
+    display                 :               inline-block;
+    margin                  :               0;
+    max-width               :               100%;
+    width                   :               auto !important;
+    padding                 :               1px;
+    border-radius           :               9px;
 }
 
