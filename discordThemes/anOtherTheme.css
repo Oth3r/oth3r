@@ -150,30 +150,24 @@
 /* dividers */
 .sidebar-1tnWFu{
     margin-right            :               10px;
-    margin-left             :               10px;
     border-radius           :               15px !important;
-    height                  :               99.3%;
 }
 .container-3XgAHv{
     margin-right            :               15px;
-    height                  :               99.4%;
     border-radius           :               15px;
 }
 .threadSidebarOpen-1LSXvU{
     border-radius           :               15px !important;
 }
  .guilds-2JjMmN {
-     height: 99.%;
-     border-top-right-radius:               15px;
-     border-bottom-right-radius:            15px;
+     border-radius          :               15px;
  }
  .tree-3agP2X{
      border-bottom-right-radius:            15px;
      margin-bottom          :               7.5px;
  }
  .chat-2ZfjoI{
-     margin-right           :               10px;
-     height                 :               99.3%;
+     margin-right           :              5px;
      border-radius          :               15px;
  }
 .peopleColumn-1wMU14{
@@ -193,7 +187,7 @@
     padding                 :               16px 10px;
 }
 .pageWrapper-2PwDoS{
-    margin-right            :               10px;
+    margin-right            :               15px;
     height                  :               99.3%;
     border-radius           :               15px;
 }
@@ -216,7 +210,7 @@
 /* custom textbox */
 .input-2g-os5:not(.addFriendInputWrapper-kkoSV9 .inputWrapper-1YNMmM .inputDefault-3FGxgL),
 .scrollableContainer-15eg7h:not(.addFriendInputWrapper-kkoSV9 .inputWrapper-1YNMmM .inputDefault-3FGxgL), .input-3r5zZY, .input-2g-os5  {
-    background-color        :             #2b2b2bc2 !important;
+    background-color        :             #40444b !important;
     transition              :               background-color 0.2s ease, border-color 0.2s ease !important;
     border                  :               1px solid transparent !important;
     outline                 :               none !important;
@@ -224,15 +218,15 @@
 .input-2g-os5:not(.addFriendInputWrapper-kkoSV9 .inputWrapper-1YNMmM .inputDefault-3FGxgL):hover,
 .scrollableContainer-15eg7h:not(.addFriendInputWrapper-kkoSV9 .inputWrapper-1YNMmM .inputDefault-3FGxgL):hover, .input-3r5zZY:hover, .input-2g-os5  {
     border-color            :             #5a5a5a !important;
-    background-color        :             rgb(32, 32, 32) !important;
+    background-color        :             #3b3e45 !important;
 }
 .input-2g-os5:not(.addFriendInputWrapper-kkoSV9 .inputWrapper-1YNMmM .inputDefault-3FGxgL):focus-within,
 .scrollableContainer-15eg7h:not(.addFriendInputWrapper-kkoSV9 .inputWrapper-1YNMmM .inputDefault-3FGxgL):focus-within, .input-3r5zZY:focus-within, .input-2g-os5  {
-    background-color        :             #1f1f1fc2 !important;
+    border-color            :             #5a5a5a !important;
+    background-color        :             #2f3237 !important;
 }
 .scrollableContainer-15eg7h:not(.addFriendInputWrapper-kkoSV9 .inputWrapper-1YNMmM .inputDefault-3FGxgL) {
     border                  :               1px solid transparent;
-    border-radius           :               25px;
 }
 .input-3r5zZY{
     border-radius           :               15px;
@@ -243,6 +237,18 @@
 }
 .searchBoxInput-P0mWHW{
     color                   :             white !important;
+}
+
+/* typing/reply bar modifications */
+.cooldownWrapper-2k1jHK{
+    position                :               relative;
+    right                   :               1%;
+}
+.form-3gdLxP{
+    margin-top              :               19px;
+}
+.scrollerSpacer-3AqkT9{
+    height                  :               1px;
 }
 
 /* member list hover effect */
@@ -257,7 +263,7 @@
     border-radius           :               10px;
 }
 
-/* channel hover things :) */
+/* channel hover things effect */
 .modeSelected-3DmyhH .content-1gYQeQ{
     border-radius           :               5px !important;
 }
@@ -273,6 +279,18 @@
 }
 .content-1gYQeQ, .channelName-3KPsGw{
     transition              :               0.4s ease;
+}
+
+/* vc users restyle on hover */
+.voiceUser-3nRK-K:hover{
+    background-color        :             #3c3f45;
+    border-radius           :               7px;
+}
+.voiceUser-3nRK-K {
+    transition              :               0.5s ease;
+}
+.listDefault-2F-w65 .clickable-1ctZ-H:hover .content-1Tgc42{
+    background-color        :               transparent !important;
 }
 
 /* centered user popout avatar*/
@@ -338,5 +356,143 @@
     content                 :               none;
 }
 
+/* roles in popup profile */
+.rolesList-3uZoaa .roleCircle-3K9O3d {
+  flex-shrink: 0;
+}
+.roleCircle-3K9O3d {
+  display: none;
+}
+.role-2TIOKu {
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  border-radius: 0px 0px 0px 0px;
+  padding: 0px 2px 0px 2px;
+  border: solid;
+  border-width: 0px 0px 0px 2px;
+}
+.role-2TIOKu:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  border-width: 12px;
+  border-style: solid;
+  border-color: inherit;
+  box-sizing: border-box;
+  pointer-events: none;
+  opacity: .3;
+  transition: .5s ease;
+}
+.role-2TIOKu .roleName-2ZJJYR {
+  padding-left: 4px;
+}
+.role-2TIOKu:hover:before {
+  opacity: .7;
+  filter: saturate(1.2);
+}
+.role-2TIOKu[aria-label]:not([style]) {
+  font-size: 12px;
+  font-weight: 500;
+  background: var(--background-modifier-selected);
+  -webkit-box-sizing: border-box;
+  border-color: #6e85d3;
+  box-sizing: border-box;
+  height: 22px;
+  width: 9% !important;
+  margin: 0 4px 4px 0;
+  padding: 4px;
+  color: #6e85d3;
+}
+.message-2CShn3 .role-2TIOKu{
+  bottom: 6px;
+}
 
+
+/* turns jump to present bar into a button */
+[class*="jumpToPresentBar"] {
+    display                 :               contents;
+}
+[class*="jumpToPresentBar"] > button:first-child {
+    display                 :               none;
+}
+[class*="jumpToPresentBar"] > button:last-child {
+    position                :               absolute;
+    z-index                 :               1;
+    bottom                  :               24px;
+    right                   :               22px;
+    padding                 :               8px !important;
+    height                  :               auto;
+    background-color        :             #4d525a;
+    box-shadow              :               var(--elevation-high);
+    border-radius           :               100px;
+    display                 :               flex;
+    font-size               :               0px;
+    color                   :               transparent;
+    transition              :               font-size .5s .1s, color .2s .1s, padding .4s .1s;
+}
+[class*="jumpToPresentBar"] > button svg {
+    order                   :               -1;
+    margin                  :               0px;
+    height                  :               24px;
+    width                   :               24px;
+    top                     :               auto;
+    margin-right            :               0px;
+    margin-left             :               0px;
+    color                   :             #FFFFFF;
+    transition              :               margin .6s;
+}
+[class*="jumpToPresentBar"]:hover > button {
+    padding                 :               8px 18px !important;
+    font-size               :               14px;
+    color                   :             #FFFFFF;
+    transition              :               font-size .5s, color .2s .1s, padding .4s;
+}
+[class*="jumpToPresentBar"]:hover > button svg {
+    margin-right            :               2px;
+    margin-left             :               -6px;
+}
+
+/* fixes a bug in popout menu */
+[placeholder="Click to add a note"]{
+    width                   :               97%;
+    margin-left             :               3.5px;
+}
+
+/* msgbar icon spacing */
+.inner-NQg18Y .buttons-uaqb-5{
+    right                   :               1px;
+}
+
+/* wide screen settings */
+.sidebarRegion-1VBisG, .sidebarRegionScroller-FXiQOh {
+    justify-content         :               unset;
+    flex                    :               unset
+}
+.contentColumn-1C7as6, .customColumn-2n-oKU, .hero-1aNo0v {
+    max-width               :               unset;
+}
+.accountProfileCard-lbN7n- {
+    max-width               :               750px;
+}
+.notificationSettings-1U0JsJ {
+    max-width               :               45%;
+}
+.option-2eIyOn, .searchBox-pyIJJj{
+    transition              :               0.20s ease;
+}
+
+/* userpopout bug fix */
+.root-8LYsGj > .topSection-13QKHs > header .headerTop-1PNKck > svg{
+    margin-left: 115px;
+    margin-top: -12px;
+}
+
+/*Embeds*/
+.embedFull-1HGV2S{
+    background-color: #2f3136;
+    border: 2px solid var(--background-accent);
+    border-radius: 10px;
+}
 
