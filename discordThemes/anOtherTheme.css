@@ -467,7 +467,7 @@
 /* making text glow hitbox */
 .cozyMessage-1DWF9U .contents-2MsGLg>.markup-eYLPri:not(:empty) {
     background-color        :               transparent;
-    display                 :               inline-flex;
+    display                 :               inline-block;
     margin                  :               0;
     max-width               :               100%;
     width                   :               auto !important;
