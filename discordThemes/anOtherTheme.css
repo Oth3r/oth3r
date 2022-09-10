@@ -460,18 +460,18 @@
 .cozyMessage-1DWF9U.message-2CShn3 .markup-eYLPri:hover{
     background-color        :             rgba(44, 44, 44, 0.5);
     box-shadow              :
-    0 0px 10px hsla(0, 0%, 90%, 0.5),
-    inset 0 0 8px 2px hsla(0, 0%, 90%, 0.5);
+    0 0px 10px hsla(0, 0%, 100%, 0.7),
+    inset 0 0 8px 2px hsla(0, 0%, 100%, 0.29);
     transition              :               0.3s ease;
 }
 /* making text glow hitbox */
 .cozyMessage-1DWF9U .contents-2MsGLg>.markup-eYLPri:not(:empty) {
     background-color        :               transparent;
-    display                 :               inline-block;
+    display                 :               inline-flex;
     margin                  :               0;
     max-width               :               100%;
     width                   :               auto !important;
     padding                 :               0px;
-    border-radius           :               1px;
+    border-radius           :               4px;
 }
 
