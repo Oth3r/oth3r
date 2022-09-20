@@ -179,9 +179,9 @@
     border-radius           :               15px;
 }
 .peopleListItem-u6dGxF{
-    transition              :               0.5s ease;
-    margin-bottom           :               6px !important;
-    border-radius           :               25px;
+    transition              :               0.2s ease;
+    margin-bottom           :               4px !important;
+    border-radius           :               9px;
     border-color            :               transparent;
     margin                  :               0 10px 0 20px;
     padding                 :               16px 10px;
@@ -261,9 +261,9 @@
 .item-3XjbnG, .option-ayUoaq {
     transition              :               0.3s ease !important;
 }
-.clickable-28SzVr .layout-1qmrhw{
-    border-radius           :               25px;
-    transition              :               0.4s ease !important;
+.clickable-28SzVr .layout-1qmrhw {
+	border-radius: 15px;
+	transition: 0.4s ease !important;
 }
 .clickable-28SzVr:hover .layout-1qmrhw {
     border-radius           :               10px;
@@ -271,10 +271,14 @@
 
 /* channel hover things effect */
 .modeSelected-3DmyhH .content-1gYQeQ{
+    width: 96%;
     border-radius           :               5px !important;
+    box-shadow              :
+    0px 0px 2.5px hsla(0, 0%, 100%, 0.9),
+    inset 0px 0px 2.5px  hsla(0, 0%, 100%, 0.5);
 }
 .wrapper-NhbLHG .content-1gYQeQ{
-    border-radius           :               25px;
+    border-radius           :               15px;
 }
 .wrapper-NhbLHG:hover .content-1gYQeQ{
     transition              :               0.4s ease;
@@ -293,7 +297,7 @@
     border-radius           :               7px;
 }
 .voiceUser-3nRK-K {
-    transition              :               0.5s ease;
+    transition              :               0.4s ease;
 }
 .listDefault-2F-w65 .clickable-1ctZ-H:hover .content-1Tgc42{
     background-color        :               transparent !important;
@@ -474,4 +478,3 @@
     padding                 :               0px;
     border-radius           :               4px;
 }
-
